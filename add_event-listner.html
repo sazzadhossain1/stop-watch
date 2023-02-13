@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="add_event-listner.js"></script>
     <title>Document</title>
+    <style>
+      .second_div {
+        background-color: darkblue;
+        margin-top: 20px;
+        padding: 10px;
+      }
+
+      .second_div h3 {
+        color: aqua;
+      }
+
+      .second_div button {
+        background-color: chartreuse;
+        padding: 3px;
+        width: 150px;
+        border-radius: 10px;
+        color: black;
+        font-weight: 600;
+        height: 35px;
+      }
+
+      .second_div button:hover {
+        background-color: aqua;
+      }
+    </style>
   </head>
   <body>
     <button class="button_class">change class text</button>
@@ -16,5 +41,17 @@
 
     <button class="button_id">Change id 2 text</button>
     <div id="id">The getElementById</div>
+
+    <!-- Adding Content -->
+    <div class="second_div">
+      <div>
+        <button id="add_hello_btn">Add Hello</button>
+        <h3 id="add_hello_text">Hello</h3>
+      </div>
+      <div>
+        <button id="number_increase_button">Start Interval</button>
+        <h3 id="increase_number">0</h3>
+      </div>
+    </div>
   </body>
 </html>
