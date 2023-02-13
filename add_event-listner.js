@@ -26,13 +26,17 @@ document.getElementById("add_hello_btn").addEventListener("click", () => {
 });
 
 // increase number
+let count;
 document
   .getElementById("number_increase_button")
   .addEventListener("click", () => {
     const increase_number = document.getElementById("increase_number");
     const getInnerText = increase_number.innerText;
-    const convertToNumber = parseInt(getInnerText);
-    increase_number.innerText = convertToNumber + 1;
-    console.log(convertToNumber);
+    let convertToNumber = parseInt(getInnerText);
+
+    setInterval(function () {
+      increase_number.innerText = convertToNumber++;
+    }, 1000);
   });
+
 // Number 4 is the end and number 5 is the beginning of the stop watch project
