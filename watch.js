@@ -30,4 +30,12 @@ stop.addEventListener("click", function () {
   clearInterval(counter);
   counter = false;
 });
+reset.addEventListener("click", function () {
+  clearInterval(counter);
+  counter = false;
+  ms = 0;
+  s = 0;
+  m = 0;
+  time.textContent = m + ":" + s + ":" + ms;
+});
 // Number 5 is the end and number 6 is the beginning of the stop watch project
