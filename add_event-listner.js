@@ -38,5 +38,3 @@ document
       increase_number.innerText = convertToNumber++;
     }, 1000);
   });
-
-// Number 4 is the end and number 5 is the beginning of the stop watch project
