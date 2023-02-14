@@ -13,7 +13,7 @@ start.addEventListener("click", function () {
     counter = setInterval(run, 10);
   }
   function run() {
-    time.textContent = m + ":" + s + ":" + ms;
+    time.textContent = currentTime();
     ms++;
     if (ms === 100) {
       ms = 0;
@@ -36,6 +36,9 @@ reset.addEventListener("click", function () {
   ms = 0;
   s = 0;
   m = 0;
-  time.textContent = m + ":" + s + ":" + ms;
+  time.textContent = currentTime();
 });
-// Number 5 is the end and number 6 is the beginning of the stop watch project
+
+const currentTime = () => {
+  return m + ":" + s + ":" + ms;
+};
